@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.477" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate post comment functionality" time="20.251">
+<failure type="java.lang.AssertionError" message="expected:&lt;2&gt; but was:&lt;1&gt;">
+<![CDATA[java.lang.AssertionError: expected:<2> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at ApolloStepDefinition.Callback.it_should_increase_the_count(Callback.java:108)
+	at ✽.it should increase the count(file:///C:/Users/SAKRAVIN/Desktop/Apollo_About/resources/Features/Callback.feature:25)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on blogs option............................................passed
+And searches any article....................................................passed
+And choose any option from the suggested articles...........................passed
+And post a comment on the article using credentials.........................passed
+And submit the comment......................................................passed
+Then it should increase the count...........................................failed
+]]></system-out>
+</testcase>
+</testsuite>

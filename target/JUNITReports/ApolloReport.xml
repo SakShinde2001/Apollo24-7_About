@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="125.325" tests="5" skipped="0" failures="2" errors="0">
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate callback functionality" time="11.884">
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on health queries option...................................passed
+And clicks on Request a callback button.....................................passed
+And enters patient name, email id and mobile number.........................passed
+And clicks on sumbit button.................................................passed
+Then it should give the success message.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate post comment functionality" time="19.898">
+<failure type="java.lang.AssertionError" message="expected:&lt;2&gt; but was:&lt;1&gt;">
+<![CDATA[java.lang.AssertionError: expected:<2> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at ApolloStepDefinition.Callback.it_should_increase_the_count(Callback.java:126)
+	at ✽.it should increase the count(file:///C:/Users/SAKRAVIN/Desktop/Apollo_About/resources/Features/Callback.feature:26)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on blogs option............................................passed
+And searches any article....................................................passed
+And choose any option from the suggested articles...........................passed
+And post a comment on the article using credentials.........................passed
+And submit the comment......................................................passed
+Then it should increase the count...........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate book doctor functionality" time="12.188">
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on hospitals and clinics option............................passed
+And chooses filters for type and location...................................passed
+And clicks on view details for any option from the list.....................passed
+And chooses any of the specialty............................................passed
+Then it should show the list of speciality doctors..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate location functionality" time="36.99">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at ApolloStepDefinition.Callback.it_should_redirect_to_the_book_function(Callback.java:201)
+	at ✽.it should redirect to the book function(file:///C:/Users/SAKRAVIN/Desktop/Apollo_About/resources/Features/Callback.feature:46)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on diagnostics centre option...............................passed
+And chooses dropdowns of location...........................................passed
+And clicks on website of the result location................................passed
+And get the direction of the location.......................................passed
+And click on book now.......................................................passed
+Then it should redirect to the book function................................failed
+]]></system-out>
+</testcase>
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate calculate calories required functionality" time="43.992">
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on Blogs option............................................passed
+And clicks on Health tools option...........................................passed
+And clicks on calculate calories button.....................................passed
+And enters age, gender, height, weight, activity level......................passed
+And clicks on calculate button..............................................passed
+Then it should give the result..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

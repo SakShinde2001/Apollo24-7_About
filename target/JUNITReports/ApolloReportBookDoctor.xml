@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.737" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate book doctor functionality" time="17.409">
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on hospitals and clinics option............................passed
+And chooses filters for type and location...................................passed
+And clicks on view details for any option from the list.....................passed
+And chooses any of the specialty............................................passed
+Then it should show the list of speciality doctors..........................passed
+]]></system-out>
+</testcase>
+</testsuite>

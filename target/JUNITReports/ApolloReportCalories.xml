@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="34.34" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="To test About Feature functionality of Apollo Website" name="To validate calculate calories required functionality" time="34.001">
+<system-out><![CDATA[
+Given User is on Apollo homepage............................................passed
+When user clicks on Blogs option............................................passed
+And clicks on Health tools option...........................................passed
+And clicks on calculate calories button.....................................passed
+And enters age, gender, height, weight, activity level......................passed
+And clicks on calculate button..............................................passed
+Then it should give the result..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
